@@ -3,7 +3,8 @@
 1. Download `adafruit-circuitpython-m5stack_atoms3-en_US-9.0.0-beta.0.bin` from https://circuitpython.org/board/m5stack_atoms3/
 2. Flash onto M5Stack AtomS3 with the Adafruit ESPTool https://adafruit.github.io/Adafruit_WebSerial_ESPTool/
 3. MacOS USB mounting caching issue workaround: add `remount-CIRCUITPY.sh` from this repo to your $PATH and run to remount the CIRCUITPY drive after initial bootup
-4. 
+4. Copy CIRCUITPY root folder onto flash drive
+5. Modify application code in code.py
 
 
 # Misc notes
