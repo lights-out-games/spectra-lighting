@@ -1,3 +1,13 @@
+# Getting Started
+
+1. Download `adafruit-circuitpython-m5stack_atoms3-en_US-9.0.0-beta.0.bin` from https://circuitpython.org/board/m5stack_atoms3/
+2. Flash onto M5Stack AtomS3 with the Adafruit ESPTool https://adafruit.github.io/Adafruit_WebSerial_ESPTool/
+3. MacOS USB mounting caching issue workaround: add `remount-CIRCUITPY.sh` from this repo to your $PATH and run to remount the CIRCUITPY drive after initial bootup
+4. 
+
+
+# Misc notes
+
 rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 flash read err, 1000
 ets_main.c 371 

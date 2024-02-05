@@ -1,0 +1,3 @@
+Adafruit CircuitPython 9.0.0-beta.0 on 2024-01-27; M5Stack AtomS3 with ESP32S3
+Board ID:m5stack_atoms3
+UID:4F21AFC63AC9
