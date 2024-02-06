@@ -1,38 +1,15 @@
-import board
+# SPDX-FileCopyrightText: 2018 Kattni Rembor for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
+"""CircuitPython Essentials NeoPixel example"""
 import time
-import neopixel_write
-import digitalio
-import rainbowio import colorwheel
+import board
+from rainbowio import colorwheel
 import neopixel
 
-# pin = digitalio.DigitalInOut(board.NEOPIXEL)
-# pin.direction = digitalio.Direction.OUTPUT
-# # G,R,B color format
-# # example sending data to 3 pixels
-# # 1,2,3 pixels: [G1,R1,B1, G2,R2,B2, G3,R3,B3 ]
-# pixel_off = bytearray([0, 0, 0]) # pixel 1: green
-# pixel_off = bytearray([255, 0, 0])
-
-# pixel_off = bytearray([
-#     255,0,0, 
-#     255,255,0, 
-#     0,255,255,
-#     0,0,255])
-
-# b = 20
-
-# pixel_off = bytearray([
-#     b,0,0, 
-#     b,b,0, 
-#     0,b,b,
-#     0,0,b])
-# neopixel_write.neopixel_write(pin, pixel_off)
-
-# pin = digitalio.DigitalInOut(board.D25)
-# pin.direction = digitalio.Direction.OUTPUT
-
 pixel_pin = board.A1
-num_pixels = 16
+num_pixels = 20
 
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.3, auto_write=False)
 
@@ -72,12 +49,16 @@ while True:
     pixels.fill(BLUE)
     pixels.show()
     time.sleep(1)
+    pixels.fill((180, 0, 255))
+    pixels.show()
+    time.sleep(1)
 
-    color_chase(RED, 0.1)  # Increase the number to slow down the color chase
-    color_chase(YELLOW, 0.1)
-    color_chase(GREEN, 0.1)
-    color_chase(CYAN, 0.1)
-    color_chase(BLUE, 0.1)
-    color_chase(PURPLE, 0.1)
+    # color_chase(RED, 0.01)  # Increase the number to slow down the color chase
+    # color_chase(YELLOW, 0.01)
+    # color_chase(GREEN, 0.01)
+    # color_chase(CYAN, 0.01)
+    # color_chase(BLUE, 0.01)
+    # color_chase(PURPLE, 0.01)
 
-    rainbow_cycle(0)  # Increase the number to slow down the rainbow
+    # rainbow_cycle(0)  # Increase the number to slow down the rainbow
+
